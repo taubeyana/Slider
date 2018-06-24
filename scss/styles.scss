@@ -21,6 +21,12 @@ h1 {
     position: relative;
     background-color: black;
     z-index: -10;
+    &:hover .slide {
+        animation-play-state: paused;
+        & .line {
+            animation-play-state: paused;
+        }
+    }
 }
 .slide {
     height: 320px;
